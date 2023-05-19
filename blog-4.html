@@ -251,7 +251,7 @@
 			<div class="row mt-32 sm-mt-2">
 				<div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
 					<div class="contact-form1 style-1 text-center">
-						<form action="#" method="POST">
+						<form action="valid-blog-4.php" method="post">
 							<div class="row">
 								<div class="col-sm-6">
 									<input type="text" name="name" placeholder="Nom" required/>
@@ -263,18 +263,19 @@
 									<input type="email" name="email" placeholder="Email" required/>
 								</div>
 								<div class="col-sm-6">
-									<select>
+									<select name="typedon">
 										<option value="">Que vous voulez-vous offrir</option>
-										<option value="">Don en nature</option>
-										<option value="">Don en numéraire</option>
-										<option value="">Autres</option>
+										<option value="Don en nature">Don en nature</option>
+										<option value="Don en numéraire">Don en numéraire</option>
+										<option value="Autres">Autres</option>
 									</select>
 								</div>
 								<div class="col-sm-12" >
 									<textarea name="message" placeholder="Message" id="mess"></textarea>
 								</div>
 								<div class="col-sm-12">
-									<button class="btn-common btn-border">Message</button>
+									<!-- <submit class="btn-common btn-border">Message</submit> -->
+									<input type="submit" value="Message" class="btn-common btn-border" name="valider">
 								</div>
 							</div>
 						</form>
@@ -340,9 +341,9 @@
 			</div>
 			<div class="col-md-3 w3-agile-footer-grid">
 				<h3>Newsletter</h3>
-				<form action="#" method="post">
-					<input type="email" id="mc4wp_email" name="EMAIL" placeholder="Entrez votre adresse mail" required="">
-					<input type="submit" value="S'inscrire">
+				<form action="valid-newsletter.php" method="post">
+					<input type="email" id="mc4wp_email" name="email" placeholder="Entrez votre adresse mail" required="">
+					<input type="submit" value="S'inscrire" name="valider">
 				</form>
 			</div>
 			<div class="clearfix"> </div>
